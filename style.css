@@ -207,9 +207,102 @@ nav{
  }
  /* structure does section code end here */
 
+ /* solution section code start here */
+#solution-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 65px;
+}
+.solution-img{
+    max-width: 50%;
+    
+}
+.solution-img img{
+    max-width: 100%;
+    border: 1px solid #e6e4e4;
+    border-radius: 6px;
+}
+.solution-text-parent{
+    width: 50%;
+    h5{
+        text-transform: uppercase;
+        color: var(--primaryColor);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 62px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--textColor);
+        margin-bottom: 36px;
+    }
+}
+.solution-text-parent ul li{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ /* solution section code end here */
 
-
-
+ /* think more section code start here */
+#think-more-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    background-color: #f7f6f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+    h3{
+        font-size: 46px;
+    }
+    p{
+        width: 50%;
+        text-align: center;
+        line-height: 24px;
+        color: var(--textColor);
+        font-size: 16px;
+    }
+}
+.think-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primaryColor);
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    img{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+    &:hover{
+        background-color: #04875f;
+    }
+}
+ /* think more section code end here */
 
 
 /* Responsive Code Start */
@@ -239,6 +332,25 @@ nav{
             font-size: 18px;
         }
     }
-    
-    
+    .solution-text-parent{
+        h5{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 55px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+    #think-more-container{
+        h3{
+            font-size: 35px;
+        }
+        p{
+            width: 58%;
+        }
+    }
 }
