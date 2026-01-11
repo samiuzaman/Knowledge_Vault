@@ -21,6 +21,9 @@
     color: white;
 }
 /* Header Section Code Start Here */
+header{
+    
+}
 nav{
     width: 80%;
     margin: 0 auto;
@@ -146,7 +149,63 @@ nav{
     }
 }
 /* Header Section Code End Here */
-
+ /* structure does section code start here */
+ #structure-does{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+ }
+ .structure-does-container{
+    text-align: center;
+    margin-bottom: 32px;
+    h2{
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 14px;
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 16px;
+        color: var(--textColor);
+    }
+ }
+ .structure-does-card-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+ }
+ .structure-single-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #eaeaea;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px rgb(197, 196, 196);
+    img{
+        margin-top: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F95555;
+        padding: 12px;
+    }
+    h5{
+        margin: 16px 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    p{
+        color: var(--textColor);
+        font-size: 14px;
+    }
+ }
+ /* structure does section code end here */
 
 
 
@@ -165,7 +224,21 @@ nav{
     }
     }
 
+     .structure-does-container{
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 15px;
+    }
+ }
 
+    .structure-single-card{
+        padding: 24px;
+        h5{
+            font-size: 18px;
+        }
+    }
     
     
 }
