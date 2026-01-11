@@ -3,6 +3,7 @@
     --primaryFont: Inter;
     --primaryColor: #30B868;
     --secondColor: rgba(249, 85, 85, 1);
+    --textColor: #627382;
 }
 /* Reset Code */
 *, *::after, *::before{
@@ -20,9 +21,6 @@
     color: white;
 }
 /* Header Section Code Start Here */
-header{
-    
-}
 nav{
     width: 80%;
     margin: 0 auto;
@@ -56,5 +54,118 @@ nav{
         background-color: #04875f;
     }
 }
+/* Hero Section Code Start */
+#hero-container{
+    height: 85vh;
+    background-image: url("/assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        width: 50%;
+        color: white;
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 84px;
+        text-align: center;
+        margin-bottom: 16px;
+        span{
+            color: var(--primaryColor);
+        }
+    }
+    p{
+        color: white;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        width: 45%;
+        text-align: center;
+    }
+}
+.early-access-btn-div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 50px;
+    img{
+        width: 16px;
+        height: 16px;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--primaryColor);
+    }
+}
+.hero-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
 
+.hero-button-container button:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primaryColor);
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    img{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+}
+.hero-button-container button:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    img{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+}
 /* Header Section Code End Here */
+
+
+
+
+
+
+
+/* Responsive Code Start */
+@media screen and (max-width: 1425px){
+    #hero-container{
+        h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    p{
+        width: 58%;
+    }
+    }
+
+
+    
+    
+}
