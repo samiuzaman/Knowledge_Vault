@@ -238,7 +238,57 @@ nav{
     }
     
     /* Circular Progress section code end here */
- 
+ /* solution section code start here */
+#solution-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 65px;
+}
+.solution-img{
+    max-width: 50%;
+    
+}
+.solution-img img{
+    max-width: 100%;
+    border: 1px solid #e6e4e4;
+    border-radius: 6px;
+}
+.solution-text-parent{
+    width: 50%;
+    h5{
+        text-transform: uppercase;
+        color: var(--primaryColor);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 62px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--textColor);
+        margin-bottom: 36px;
+    }
+}
+.solution-text-parent ul li{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ /* solution section code end here */
 
  /* think more section code start here */
 #think-more-container{
