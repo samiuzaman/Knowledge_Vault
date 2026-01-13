@@ -125,10 +125,14 @@ nav{
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.5;
     img{
         width: 20px;
         height: 20px;
         color: white;
+    }
+    &:hover{
+        background-color: #04875f;
     }
 }
 .hero-button-container button:nth-child(2){
@@ -142,10 +146,14 @@ nav{
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    transition: 0.5;
     img{
         width: 20px;
         height: 20px;
         color: white;
+    }
+    &:hover{
+        background-color: #04875f;
     }
 }
 /* Header Section Code End Here */
@@ -207,57 +215,30 @@ nav{
  }
  /* structure does section code end here */
 
- /* solution section code start here */
-#solution-container{
-        width: 80%;
-        margin: 0 auto;
+ /* Circular Progress section code start here */
+ #circular-progress-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+ }
+ .circular-progress-headline{
+     font-size: 40px;
+     font-weight: bold;
+     text-align: center;
+    }
+    .single-circle{
+        width: 120px;
+        height: 120px;
+        background-color: #E7E7E8;
+        border-radius: 50%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 60px;
-        margin-bottom: 65px;
-}
-.solution-img{
-    max-width: 50%;
+    }
     
-}
-.solution-img img{
-    max-width: 100%;
-    border: 1px solid #e6e4e4;
-    border-radius: 6px;
-}
-.solution-text-parent{
-    width: 50%;
-    h5{
-        text-transform: uppercase;
-        color: var(--primaryColor);
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 14px;
-    }
-    h2{
-        font-size: 48px;
-        font-weight: bold;
-        line-height: 62px;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-    }
-    p{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        color: var(--textColor);
-        margin-bottom: 36px;
-    }
-}
-.solution-text-parent ul li{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
- /* solution section code end here */
+    /* Circular Progress section code end here */
+ 
 
  /* think more section code start here */
 #think-more-container{
@@ -303,7 +284,51 @@ nav{
     }
 }
  /* think more section code end here */
+/* Footer Section Code Start Here */
+footer{
+    background-color: #001931;
+    padding: 80px 80px 0 80px;
+    hr{
+        color: #9b9b9b;
+    }
+    p{
+        color: #fafafa;
+        font-size: 16px;
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    padding-bottom: 50px;
+    img{
+        width: 140px;
+        height: 60px;
+    }
+}
 
+.social-link{
+    text-align: center;
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        color: white;
+    }
+    span{
+        background-color: white;
+        color: black;
+        font: bold;
+        padding: 5px 10px;
+        border-radius: 50%;font-size: 18px;
+    }
+}
+
+/* Footer Section Code End Here */
 
 /* Responsive Code Start */
 @media screen and (max-width: 1425px){
@@ -331,6 +356,9 @@ nav{
         h5{
             font-size: 18px;
         }
+    }
+    .circular-progress-headline{
+        font-size: 32px;
     }
     .solution-text-parent{
         h5{
